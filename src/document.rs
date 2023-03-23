@@ -126,7 +126,7 @@ impl Document {
                     position.x = x;
                     return Some(position);
                 }
-                if direction == searchDirection::Forward {
+                if direction == SearchDirection::Forward {
                     position.y = position.y.saturating_add(1);
                     position.x = 0;
                 } else {

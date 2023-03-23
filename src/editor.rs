@@ -369,7 +369,7 @@ impl Editor {
         }
     }
 
-    fn prompt<C>(&mut self, prompt: &str, callback: C) -> Result<Option<String>, std::io::Error> 
+    fn prompt<C>(&mut self, prompt: &str, mut callback: C) -> Result<Option<String>, std::io::Error> 
     where
         C: FnMut(&mut Self, Key, &String),
     {
