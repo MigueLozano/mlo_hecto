@@ -12,7 +12,10 @@ mod editor;
 mod terminal;
 mod document;
 mod highlighting;
+mod filetype;
 
+pub use filetype::HighlightingOptions;
+pub use filetype::FileType;
 pub use editor::SearchDirection;
 pub use row::Row;
 pub use editor::Position;
